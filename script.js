@@ -1,26 +1,24 @@
-// The rescue gallery uses a local illustration until Hana's real photos arrive.
-document.querySelectorAll('.replaceable-photo').forEach((img) => {
-  const frame = img.closest('.photo-frame');
-  const markLoaded = () => {
-    if (!img.src.endsWith('hana-illustration.svg') && img.naturalWidth > 0) frame?.classList.add('has-photo');
-  };
-  const useFallback = () => {
-    if (img.dataset.fallback && !img.src.endsWith(img.dataset.fallback)) img.src = img.dataset.fallback;
-  };
-  img.addEventListener('load', markLoaded);
-  img.addEventListener('error', useFallback);
-  if (img.complete) { if (img.naturalWidth > 0) markLoaded(); else useFallback(); }
-});
-const menu = document.querySelector('.nav-toggle');
-const links = document.querySelector('.nav-links');
+const menu = document.getElementById('menu-toggle');
+const nav = document.getElementById('main-nav');
 menu?.addEventListener('click', () => {
-  const expanded = menu.getAttribute('aria-expanded') === 'true';
-  menu.setAttribute('aria-expanded', String(!expanded));
-  links?.classList.toggle('open', !expanded);
+  const open = menu.getAttribute('aria-expanded') !== 'true';
+  menu.setAttribute('aria-expanded', String(open));
+  menu.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  nav.classList.toggle('open', open);
 });
-links?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-  links.classList.remove('open');
+nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   menu?.setAttribute('aria-expanded', 'false');
+  nav?.classList.remove('open');
 }));
-const themeSwitch = document.getElementById('theme-switch');
-themeSwitch?.addEventListener('click', () => document.body.classList.toggle('dark-mode'));
+document.getElementById('theme-btn')?.addEventListener('click', () => document.body.classList.toggle('dark'));
+const modal = document.getElementById('lightbox');
+const modalImg = document.getElementById('lightbox-image');
+document.querySelectorAll('.gallery-image').forEach(button => {
+  button.addEventListener('click', () => {
+    modalImg.src = button.dataset.image;
+    modalImg.alt = button.dataset.alt;
+    modal.showModal();
+  });
+});
+document.getElementById('lightbox-close')?.addEventListener('click', () => modal.close());
+modal?.addEventListener('click', (event) => { if (event.target === modal) modal.close(); });

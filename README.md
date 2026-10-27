@@ -1,18 +1,14 @@
-# Hana | Rescue Story landing page
+# Meet Hana, rescued cat landing page
 
-A working, responsive HTML/CSS landing page for Hana, a cat rescued with help from the Dogecoin Foundation, using the visual styling shown in Dogecoin.com screenshots: black compact navigation, Comic Neue typeface, gold accents, light sections, soft dotted motifs, four cream resource cards, and a familiar footer.
+A responsive standalone HTML/CSS/JS website, closely styled after the Dogecoin website screenshots.
 
-## Open the website
-Open `index.html` locally or upload the folder as-is to GitHub Pages, Vercel, Netlify, or another static host. No build process is required. Google Fonts (Comic Neue) loads online and uses local font fallbacks when offline.
+Open `index.html` in your browser. No build step required. The font needs internet access to load Comic Neue via Google Fonts; the site has a local fallback.
 
-## Replace illustration with Hana's real photos
-Drop images into the `assets` folder with the following filenames:
+Hana's three supplied photos live in `assets/`:
+- `hana-held.webp` (photo of Hana being held)
+- `hana-portrait.webp` (Hana's close-up)
+- `hana-paw.webp` (Hana giving her paw)
 
-- `hana-hero.jpg` (hero portrait)
-- `hana-story.jpg` (story image)
-- `hana-1.jpg`, `hana-2.jpg`, `hana-3.jpg` (gallery)
+The three pictures appear throughout the hero, story, and gallery. Gallery images can be opened in a full-screen viewer. Navigation and a light/dark toggle work on desktop/mobile.
 
-The website automatically swaps each illustrated placeholder for the real photograph when you add the corresponding file. PNG/WebP files work as well if you update the extension in the HTML.
-
-## Important
-This is an independent website concept, not an official Dogecoin Foundation publication. The Dogecoin logo and the tiny starfield screenshot crop are from the design references that the user supplied. The rescue story uses only the basic facts the user supplied. Before publication, confirm the rescue details, get permission to use any official trademarks, and replace the temporary illustration with Hana's real images.
+This is an independent page concept and not an official Dogecoin Foundation publication. Please confirm the Foundation-related rescue claims and replace the sample copy with verified details before publishing.
