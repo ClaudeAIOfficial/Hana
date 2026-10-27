@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 740" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated placeholder portrait of Hana</title>
+  <desc id="desc">A stylized golden cat waiting for Hana's photos</desc>
+  <defs>
+    <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fce9ad"/><stop offset=".53" stop-color="#e5bd63"/><stop offset="1" stop-color="#ca9444"/></linearGradient>
+    <linearGradient id="body" x1=".18" y1="0" x2=".83" y2="1"><stop stop-color="#fbe3a5"/><stop offset="1" stop-color="#d2a459"/></linearGradient>
+    <linearGradient id="inner" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6a296"/><stop offset="1" stop-color="#c98d7d"/></linearGradient>
+  </defs>
+  <path d="M111 684C97 583 157 497 243 458c25-12 53-19 91-19 40 0 74 8 103 25 89 52 129 127 127 220H111Z" fill="url(#body)"/>
+  <path d="M198 514c-33 28-53 68-59 113M495 535c25 28 36 54 46 95" fill="none" stroke="#b8873c" stroke-width="17" stroke-linecap="round" opacity=".55"/>
+  <path d="M180 330 155 88c-2-18 17-27 30-16l144 124 44-2L502 73c14-12 35-2 34 16l-16 266-340-25Z" fill="url(#fur)" stroke="#b98743" stroke-width="8" stroke-linejoin="round"/>
+  <path d="m186 132 22 165 94-74Z" fill="url(#inner)" opacity=".82"/>
+  <path d="m493 125-13 177-94-72Z" fill="url(#inner)" opacity=".82"/>
+  <path d="M180 288c-14-113 53-177 158-183 115-7 181 73 173 185l-12 107c-9 109-74 179-161 182-89 2-154-74-158-181l0-110Z" fill="url(#fur)"/>
+  <path d="M241 211c18-18 43-28 66-31M389 179c26 3 48 16 65 34" stroke="#bf9048" stroke-width="19" fill="none" stroke-linecap="round" opacity=".72"/>
+  <path d="M330 151c-12 22-18 44-18 62M355 153c12 19 18 38 19 58" stroke="#c3954a" stroke-width="13" stroke-linecap="round" opacity=".5"/>
+  <path d="M212 340c-1-61 43-95 99-85 20 4 33 14 45 24 14-14 35-24 58-24 50 0 75 32 76 84 1 36-6 97-27 130-23 36-72 63-124 63-54 0-102-25-124-62-21-35-18-99-3-130Z" fill="#fae4b4"/>
+  <path d="M234 326q27-31 66 0M382 325q35-32 66-2" stroke="#856238" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <ellipse cx="274" cy="337" rx="14" ry="20" fill="#453727"/><ellipse cx="415" cy="337" rx="14" ry="20" fill="#453727"/>
+  <circle cx="279" cy="330" r="5" fill="#fff9ed"/><circle cx="419" cy="331" r="5" fill="#fff9ed"/>
+  <path d="M309 396q34-18 67 0l-23 24c-4 4-9 4-13 0Z" fill="#b87975"/>
+  <path d="M343 418v21m0 0q-27 25-55 1m55-1q28 25 55-1" fill="none" stroke="#6b4b35" stroke-width="7" stroke-linecap="round"/>
+  <path d="M291 403c-29-5-51-4-80-14m73 31c-28 1-48 8-70 20m194-37c29-9 50-13 79-13m-72 31c29 0 48 9 70 21" fill="none" stroke="#6b543b" stroke-width="5" stroke-linecap="round" opacity=".72"/>
+  <path d="M315 519c13 19 27 30 28 30s21-14 29-31" fill="none" stroke="#ad803c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M264 559q66 35 145-1" fill="none" stroke="#b88c50" stroke-width="12" stroke-linecap="round" opacity=".45"/>
+  <circle cx="343" cy="594" r="32" fill="#dfb851" stroke="#a98231" stroke-width="6"/>
+  <path d="M337 585c-12-12-29 7-14 18l20 14 20-14c17-12 1-30-12-18l-8 7Z" fill="#fff2c9"/>
+</svg>
