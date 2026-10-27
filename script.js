@@ -22,3 +22,21 @@ document.querySelectorAll('.gallery-image').forEach(button => {
 });
 document.getElementById('lightbox-close')?.addEventListener('click', () => modal.close());
 modal?.addEventListener('click', (event) => { if (event.target === modal) modal.close(); });
+
+const walletCopyButton = document.getElementById('copy-wallet');
+walletCopyButton?.addEventListener('click', async () => {
+  const walletInput = document.getElementById('hana-wallet');
+  const status = document.getElementById('copy-status');
+  let copied = false;
+  try {
+    await navigator.clipboard.writeText(walletInput.value);
+    copied = true;
+  } catch (_) {
+    walletInput.focus();
+    walletInput.select();
+    try { copied = document.execCommand('copy'); } catch (_) {}
+    walletInput.setSelectionRange(0, 0);
+    walletInput.blur();
+  }
+  status.textContent = copied ? 'Wallet address copied.' : 'Copy not available. Select the address above to copy it.';
+});
